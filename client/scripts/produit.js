@@ -1,4 +1,6 @@
 /*function chargerproduit(){
+
+asdaegfe
     $.ajax({
         url: "/produits",
         success: function( result ) {
