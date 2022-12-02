@@ -7,7 +7,7 @@ function item_to_html(item){
 
     let item_head = $('<div></div>')
         .addClass('card-header py-3')
-        .append('<h4 class="my-0 fw-normal">' + item.nom + '</h4>');
+        .append('<h4 class="my-0 fw-normal">' + item.nomProduit + '</h4>');
 
     let item_detail = $('<ul></ul>')
         .addClass('list-unstyled mt-3 mb-4')
