@@ -1,13 +1,14 @@
 let currenFilter = "0";
 
-function item_to_html(item){
-    //console.log((String)item);
+function item_to_html_produits(item){
+    console.log("test");
+    //currenFilter.log((String)item);
     let item_card = $('<div></div>')
         .addClass('card mb-4 rounded-3 shadow-sm');
 
     let item_head = $('<div></div>')
         .addClass('card-header py-3')
-        .append('<h4 class="my-0 fw-normal">' + item.nomProduit + '</h4>');
+        .append('<h4 class="my-0 fw-normal">' + item.nom + '</h4>');
 
     let item_detail = $('<ul></ul>')
         .addClass('list-unstyled mt-3 mb-4')
@@ -18,7 +19,8 @@ function item_to_html(item){
 
     let item_body = $('<div></div>')
         .addClass('card-body')
-        .append(' <h1 class="card-title text-center"> $' + item.prix +'</h1>');
+        //.append(' <h1 class="card-title text-center">test</h1>');
+        .append(' <h1 class="card-title text-center"> ' + item.prix +'</h1>');
 
     let p = $('<p></p>')
         .addClass('w-100 display-6 text-center')
@@ -36,8 +38,6 @@ function item_to_html(item){
 
 function add_item(id_item)
 {
-    //console.log(id_item);
-   // console.log(id_item);
     $.ajax({
         url: "/clients/"+"1"+"/panier",
         method:"POST",
@@ -62,6 +62,9 @@ function add_item(id_item)
 function LoadProducts(filtre){
     $.ajax({
         url: "/produits",
+        beforeSend: function (xhr){
+            xhr.setRequestHeader('Authorization', "Basic "+ 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZENsaWVudCI6MSwicm9sZSI6ImNsaWVudCIsImlhdCI6MTYzNjc1MjI1MywiZXhwIjoxODM2NzUyMjUzfQ.qMcKC0NeuVseNSeGtyaxUvadutNAfzxlhL5LYPsRB8k');
+        },
         success: function( result ) {
 
             if(currenFilter != filtre || !$('#list_items').lastChild)
@@ -69,11 +72,9 @@ function LoadProducts(filtre){
                 ClearItemList();
                 //console.log("loading :...");
                 $.each(result, function (key, value) {
-
-
                     if(filtre == 'Tout' || filtre == value.categorie.nom)
                     {
-                        let item = item_to_html(value);
+                        let item = item_to_html_produits(value);
                         $('#list_items').append(item);
                     }
                 });
@@ -119,6 +120,7 @@ function ClearItemList()
 }
 
 async function chargerproduits (){
+    currenFilter = "0";
     LoadProducts('Tout');
     LoadCategories();
 }

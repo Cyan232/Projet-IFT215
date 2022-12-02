@@ -275,5 +275,19 @@ form .group select{
 
 #list_items_panier
 {
-    width: 30%;
+    position: center;
+    padding: 1.5%;
+
+    //width: 30%;
+}
+
+#TitrePanier
+{
+    text-align:center;
+    border: #444444;
+}
+#Panier
+{
+    justify-content: center;
+    width: 80%;
 }

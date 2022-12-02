@@ -1,5 +1,53 @@
-function item_to_html(item){
-    //console.log((String)item);
+function item_to_html_panier(item, itemData){
+
+    let mainRow = $('<div></div>')
+        .addClass('row');
+
+    let item_card = $('<div></div>')
+        .addClass('card mb-4 rounded-3 shadow-sm');
+
+    let item_head = $('<div></div>')
+        .addClass('card-header py-3')
+        .append('<h4 class="my-0 fw-normal">' + item.nomProduit + '</h4>');
+
+    let row = $('<div></div>')
+        .addClass('row')
+
+    let colItemDesc = $('<div></div>')
+        .addClass('col-sm')
+        .append('<l>Categorie:' + "itemData.categorie" +'</l>')
+        .append('<l>S/N :' + itemData.serial +'</l>');
+
+    let colItemQty = $('<div></div>')
+        .addClass('col-sm')
+        .append('<a>Quantité:' + item.quantite +'</a>')
+
+    let colItemPrice = $('<div></div>')
+        .addClass('col-sm')
+        .append('<a>Prix :' + item.quantite * item.prix +'</a>');
+
+    let colItemEntry = $('<div></div>')
+        .addClass('col-sm')
+        .append('<button> supprimer </button>');
+
+    let Grid = $('<div></div>')
+        .addClass('container')
+
+    row.append(colItemDesc);
+    row.append(colItemQty);
+    row.append(colItemPrice);
+    row.append(colItemEntry);
+
+    Grid.append(row);
+
+    item_card.append(item_head);
+    item_card.append(Grid);
+
+
+    return $('<div></div>').append(mainRow).append(item_card);
+    /*let row = $('<div></div>')
+        .addClass('row');
+
     let item_card = $('<div></div>')
         .addClass('card mb-4 rounded-3 shadow-sm');
 
@@ -10,13 +58,13 @@ function item_to_html(item){
     let item_detail = $('<ul></ul>')
         .addClass('list-unstyled mt-3 mb-4')
         .append('<li>Categorie:' + item.descriptionProduit +'</li>')
-        .append('<li>S/N :' + item.quantite +'</li>');
+        .append('<li>Quantitées :' + item.quantite +'</li>');
 
     let item_image = $('<i></i>');
 
     let item_body = $('<div></div>')
         .addClass('card-body')
-        .append(' <h1 class="card-title text-center"> $' + item.prix +'</h1>');
+        .append(' <a class="card-title text-center"> $' + item.prix +'</a>');
 
     let p = $('<p></p>')
         .addClass('w-100 display-6 text-center')
@@ -29,13 +77,11 @@ function item_to_html(item){
 
     item_card.append(item_head).append(item_body);
 
-    return $('<div></div>').addClass('col-md-3') .append(item_card);
+    return $('<div></div>').append(row).append(item_card);*/
 }
 
 function add_item(id_item)
 {
-    //console.log(id_item);
-    // console.log(id_item);
     $.ajax({
         url: "/clients/"+"1"+"/panier",
         method:"POST",
@@ -51,13 +97,11 @@ function add_item(id_item)
                 total += value.quantite;
             });
             $('#item_counter').text(total);
-            //$('#item_counter').text(result.items.length);
-
         }
     });
 }
 
-function LoadCart(){
+function LoadCart(items){
     $.ajax({
         url: "/clients/1/panier",
         method: "GET",
@@ -66,14 +110,40 @@ function LoadCart(){
         },
         success: function( result ) {
                 $.each(result.items, function (key, value) {
-                    let item = item_to_html(value);
-                    $('#list_items').append(item);
+                    let itemData = GetItem(items,value.idProduit);
+                    let item = item_to_html_panier(value, itemData);
+                    $('#list_items_panier').append(item);
                 });
             }
         }
     );
 }
 
+function GetItem(ids, id)
+{
+    let result
+    ids.forEach(function(entry) {
+        if(ids == entry.id)
+        {
+            result = entry;
+        }
+    });
+    return result;
+}
+
+function GetItems(ids){
+
+    $.ajax({
+        url: "/produits",
+        beforeSend: function (xhr){
+            xhr.setRequestHeader('Authorization', "Basic "+ 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZENsaWVudCI6MSwicm9sZSI6ImNsaWVudCIsImlhdCI6MTYzNjc1MjI1MywiZXhwIjoxODM2NzUyMjUzfQ.qMcKC0NeuVseNSeGtyaxUvadutNAfzxlhL5LYPsRB8k');
+        },
+        success: function( result )
+        {
+            LoadCart(result);
+        }
+    });
+}
 
 async function chargerpanier (){
     LoadCart('Tout');
