@@ -9,7 +9,7 @@
         "courriel": "aaa@bbb.com",
         "mdp": "$2b$08$CEfAuisfWI/driqC4REyfOo/y8RG0g1dw7ngClRLBk1QANEs.U53u",
         "panier": {
-            "valeur": 1371.34,
+            "valeur": 1605.1000000000001,
             "items": [
                 {
                     "id": 0,
@@ -17,7 +17,7 @@
                     "nomProduit": "concombre",
                     "descriptionProduit": "pas un jouet",
                     "prix": 2.23,
-                    "quantite": 31
+                    "quantite": 39
                 },
                 {
                     "id": 1,
@@ -25,7 +25,7 @@
                     "nomProduit": "Tomate",
                     "descriptionProduit": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
                     "prix": 24.76,
-                    "quantite": 30
+                    "quantite": 32
                 },
                 {
                     "id": 2,
@@ -33,7 +33,7 @@
                     "nomProduit": "Banane",
                     "descriptionProduit": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
                     "prix": 24.76,
-                    "quantite": 18
+                    "quantite": 24
                 },
                 {
                     "id": 3,
@@ -41,7 +41,7 @@
                     "nomProduit": "Un dildo",
                     "descriptionProduit": "un gros jouet",
                     "prix": 2.23,
-                    "quantite": 19
+                    "quantite": 22
                 },
                 {
                     "id": 4,
@@ -49,7 +49,7 @@
                     "nomProduit": "1 gm de weed",
                     "descriptionProduit": "un gros jouet",
                     "prix": 2.23,
-                    "quantite": 21
+                    "quantite": 24
                 },
                 {
                     "id": 5,
@@ -57,7 +57,7 @@
                     "nomProduit": "un cadavre d'enfant",
                     "descriptionProduit": "un gros jouet",
                     "prix": 2.23,
-                    "quantite": 3
+                    "quantite": 4
                 },
                 {
                     "id": 6,
@@ -65,7 +65,7 @@
                     "nomProduit": "un butplug",
                     "descriptionProduit": "un gros jouet",
                     "prix": 2.23,
-                    "quantite": 8
+                    "quantite": 9
                 }
             ]
         },

@@ -21,8 +21,12 @@ router.get('/points_de_vente', function(req, res){
     res.sendFile(path.join(__dirname + '/../client/points_de_vente.html'));
 });
 
-router.get('/produit', function(req, res){
-    res.sendFile(path.join(__dirname + '/../client/produit.html'));
+router.get('/produits', function(req, res){
+    res.sendFile(path.join(__dirname + '/../client/produits.html'));
+});
+
+router.get('/panier', function(req, res){
+    res.sendFile(path.join(__dirname + '/../client/panier.html'));
 });
 
 module.exports = router

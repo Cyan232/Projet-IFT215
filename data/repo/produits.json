@@ -1,93 +1,54 @@
 [
     {
         "id": 0,
-        "serial": "we23545",
-        "nom": "Banane",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
-        "prix": 24.76,
-        "qte_inventaire": 146,
+        "serial": "826890020139",
+        "nom": "LTO3 original",
+        "description": "LTO3 Original est un complément naturel qui peut aider à réduire l’anxiété, le stress, la panique et les symptômes associés au trouble déficitaire de l’attention avec ou sans hyperactivité (TDAH). Il peut aider à favoriser la concentration, à améliorer la qualité du sommeil et à favoriser une relaxation temporaire.",
+        "prix": 31.99,
+        "qte_inventaire": 140,
         "categorie": {
-            "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
-        }
-    },
-    {
-        "id": 1,
-        "serial": "we23545",
-        "nom": "Tomate",
-        "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
-        "prix": 24.76,
-        "qte_inventaire": 11,
-        "categorie": {
-            "id": 2,
-            "nom": "Banane",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 0,
+            "nom": "Concentration",
+            "description": "Concentration"
         }
     },
     {
         "id": 2,
-        "serial": "sdfds",
-        "nom": "concombre",
-        "description": "pas un jouet",
-        "prix": 2.23,
-        "qte_inventaire": 19,
+        "serial": "826890020146",
+        "nom": "LTO3 sans saveur",
+        "description": "LTO3 Original est un complément naturel qui peut aider à réduire l’anxiété, le stress, la panique et les symptômes associés au trouble déficitaire de l’attention avec ou sans hyperactivité (TDAH). Il peut aider à favoriser la concentration, à améliorer la qualité du sommeil et à favoriser une relaxation temporaire.",
+        "prix": 31.99,
+        "qte_inventaire": 13,
         "categorie": {
-            "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 0,
+            "nom": "Concentration",
+            "description": "Concentration"
         }
     },
     {
         "id": 3,
-        "serial": "asdfeas",
-        "nom": "Un dildo",
-        "description": "un gros jouet",
-        "prix": 2.23,
-        "qte_inventaire": 23,
+        "serial": "826890020146",
+        "nom": "PLEIN SOMMEIL",
+        "description": "Comme son nom l’indique, Deep Sleep est un complément naturel destiné à vous aider à dormir. Son effet relaxant peut aider à améliorer la durée et la qualité du sommeil, à réduire l’anxiété et à calmer les nerfs. Ce produit est connu pour être utilisé par ceux qui ont des difficultés à s’endormir et ceux qui sont gênés par le décalage horaire. Il aide à équilibrer les cycles de sommeil et d’éveil.",
+        "prix": 33.99,
+        "qte_inventaire": 58,
         "categorie": {
-            "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 2,
+            "nom": "Sommeil",
+            "description": "Sommeil"
         }
     },
     {
         "id": 4,
-        "serial": "asdfewf234",
-        "nom": "1 gm de weed",
-        "description": "un gros jouet",
-        "prix": 2.23,
-        "qte_inventaire": 21,
+        "serial": "826890020122",
+        "nom": "COLLAGÈNE BAMBOU GLUCOSAMINE",
+        "description": "Le complément naturel Collagène Bambou Glucosamine a été spécialement conçu afin de répondre aux besoins des gens de 40 ans et plus qui sont actifs et qui veulent retarder les effets de l’âge sur les articulations, la santé du cartilage et des os. Constitué d’une source importante de collagène de type II, ce produit peut aider à promouvoir la synthèse des cellules cartilagineuses, à adoucir les articulations et à apaiser les douleurs. Il peut également permet de ralentir l’apparition de l’arthrose et la dégradation du cartilage. Il est également connu pour ses propriétés anti-inflammatoires.",
+        "prix": 30.99,
+        "qte_inventaire": 62,
         "categorie": {
-            "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
-        }
-    },
-    {
-        "id": 5,
-        "serial": "asdfewf234",
-        "nom": "un butplug",
-        "description": "un gros jouet",
-        "prix": 2.23,
-        "qte_inventaire": 16,
-        "categorie": {
-            "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
-        }
-    },
-    {
-        "id": 6,
-        "serial": "asdfewf234",
-        "nom": "un cadavre d'enfant",
-        "description": "un gros jouet",
-        "prix": 2.23,
-        "qte_inventaire": 21,
-        "categorie": {
-            "id": 1,
-            "nom": "Prunier",
-            "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments"
+            "id": 3,
+            "nom": "Os et articulations",
+            "description": "Os et articulations"
         }
     }
 ]
