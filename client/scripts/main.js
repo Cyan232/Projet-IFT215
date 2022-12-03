@@ -3,3 +3,8 @@ function clicMenuGauche(lien){
     lien.innerText += " cliqué!"
 }
 
+function togglePopup()
+{
+    document.getElementById("popup-1").classList.toggle("active");
+}
+

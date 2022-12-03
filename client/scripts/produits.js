@@ -143,6 +143,5 @@ function chargerproduit(){
     });
 }
 
-$(function () {
-    chargerproduit();
-});
+async function chargerproduit() {
+}

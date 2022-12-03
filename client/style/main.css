@@ -254,3 +254,137 @@ form .group select{
     width: 64%;
     margin-left: 34%;
 }
+
+/* DÉBUT - Révision de la commande.*/
+#resume
+{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    clear: both;
+}
+
+#resumeText
+{
+    padding-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#transportText
+{
+    padding-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#choixTransport
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: left;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    clear: both;
+}
+
+#boutonsConfirmation
+{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+    padding: 15px;
+    clear: both;
+}
+
+#but_ok
+{
+    height: 30px;
+    width:50px;
+    background-color: lightblue;
+}
+
+#but_annuler
+{
+    height: 30px;
+    width: 75px;
+    background-color: lightcoral;
+}
+
+/*POPUP*/
+.popup
+{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.popup .overlay
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content
+{
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn
+{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay
+{
+    display: block;
+}
+
+.popup.active .content
+{
+    transition:all 500ms ease-in-out ;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#but_oui
+{
+    height: 30px;
+    width: 75px;
+}
+/* FIN - Révision de la commande.*/
