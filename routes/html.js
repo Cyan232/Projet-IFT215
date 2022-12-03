@@ -24,5 +24,8 @@ router.get('/points_de_vente', function(req, res){
 router.get('/produit', function(req, res){
     res.sendFile(path.join(__dirname + '/../client/produit.html'));
 });
+router.get('/pgConfirmation', function(req, res){
+    res.sendFile(path.join(__dirname + '/../client/pgConfirmation.html'));
+});
 
 module.exports = router

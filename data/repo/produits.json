@@ -5,7 +5,7 @@
         "nom": "Banane",
         "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
         "prix": 24.76,
-        "qte_inventaire": 146,
+        "qte_inventaire": 145,
         "categorie": {
             "id": 1,
             "nom": "Prunier",
@@ -18,7 +18,7 @@
         "nom": "Tomate",
         "description": "Un poirier est une espèce d'arbre qui offre de bons suppléments",
         "prix": 24.76,
-        "qte_inventaire": 11,
+        "qte_inventaire": 10,
         "categorie": {
             "id": 2,
             "nom": "Banane",
@@ -31,7 +31,7 @@
         "nom": "concombre",
         "description": "pas un jouet",
         "prix": 2.23,
-        "qte_inventaire": 19,
+        "qte_inventaire": 18,
         "categorie": {
             "id": 1,
             "nom": "Prunier",
@@ -44,7 +44,7 @@
         "nom": "Un dildo",
         "description": "un gros jouet",
         "prix": 2.23,
-        "qte_inventaire": 23,
+        "qte_inventaire": 22,
         "categorie": {
             "id": 1,
             "nom": "Prunier",
@@ -57,7 +57,7 @@
         "nom": "1 gm de weed",
         "description": "un gros jouet",
         "prix": 2.23,
-        "qte_inventaire": 21,
+        "qte_inventaire": 20,
         "categorie": {
             "id": 1,
             "nom": "Prunier",
@@ -70,7 +70,7 @@
         "nom": "un butplug",
         "description": "un gros jouet",
         "prix": 2.23,
-        "qte_inventaire": 16,
+        "qte_inventaire": 15,
         "categorie": {
             "id": 1,
             "nom": "Prunier",
@@ -83,7 +83,7 @@
         "nom": "un cadavre d'enfant",
         "description": "un gros jouet",
         "prix": 2.23,
-        "qte_inventaire": 21,
+        "qte_inventaire": 20,
         "categorie": {
             "id": 1,
             "nom": "Prunier",
