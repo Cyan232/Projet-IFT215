@@ -1,0 +1,52 @@
+<div>
+  <p id="resumeText" >Voici le résumé de votre commande :</p>
+  <div id="resume">
+    <ul>
+      <li>Item#1</li>
+      <li>Item#2</li>
+      <li>Item#3</li>
+      <li>Item#4</li>
+      <li>Item#5</li>
+    </ul>
+    <ul>
+      <li>QTT#1</li>
+      <li>QTT#2</li>
+      <li>QTT#3</li>
+      <li>QTT#4</li>
+      <li>QTT#5</li>
+    </ul>
+    <ul>
+      <li>Prix#1</li>
+      <li>Prix#2</li>
+      <li>Prix#3</li>
+      <li>Prix#4</li>
+      <li>Prix#5</li>
+    </ul>
+    <p> Montant total :</p>
+  </div>
+</div>
+
+<p id="transportText">Veuillez choisir le mode de transport :</p>
+<section id="choixTransport">
+  <label class="radio">
+    <!-- Group -->
+    <p><input type="radio" name="Transport"> Livraison en 1 jour (frais de 25$).</p>
+    <p><input type="radio" name="Transport"> Livraison Express (2 à 3 jours ouvrables, frais de 10$).</p>
+    <p><input type="radio" name="Transport" checked> Livraison régulière (3 à 5 jours ouvrables, aucun frais).</p>
+  </label>
+</section>
+
+<section id="boutonsConfirmation">
+  <button id="but_annuler" class="btn btn-primary btn-sm" onclick="togglePopup()" type="button">Annuler</button>
+  <button id="but_ok" class="btn btn-primary btn-sm" onclick="window.location.href = '#/pgConfirmation';" type="button">Ok</button>
+
+</section>
+
+<div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">&times;</div>
+    <h1>Êtes-vous sûr de vouloir annuler la commande?</h1>
+    <button id="but_oui" class="btn btn-primary btn-sm" onclick="window.location.href = '#/accueil';" type="button">Oui</button>
+  </div>
+</div>

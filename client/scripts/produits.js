@@ -119,8 +119,30 @@ function ClearItemList()
     }
 }
 
+function UpdateCartLogo()
+{
+    $.ajax({
+        url: "/clients/"+"1"+"/panier",
+        method:"GET",
+        beforeSend: function (xhr){
+            xhr.setRequestHeader('Authorization', "Basic "+ 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZENsaWVudCI6MSwicm9sZSI6ImNsaWVudCIsImlhdCI6MTYzNjc1MjI1MywiZXhwIjoxODM2NzUyMjUzfQ.qMcKC0NeuVseNSeGtyaxUvadutNAfzxlhL5LYPsRB8k');
+        },
+        success: function( result ) {
+            let total = 0;
+
+            $.each(result.items, function (key, value)
+            {
+                total += value.quantite;
+            });
+            $('#item_counter').text(total);
+        }
+    });
+}
+
+
 async function chargerproduits (){
     currenFilter = "0";
     LoadProducts('Tout');
     LoadCategories();
+    UpdateCartLogo();
 }

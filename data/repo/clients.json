@@ -9,17 +9,8 @@
         "courriel": "aaa@bbb.com",
         "mdp": "$2b$08$CEfAuisfWI/driqC4REyfOo/y8RG0g1dw7ngClRLBk1QANEs.U53u",
         "panier": {
-            "valeur": 95.97,
-            "items": [
-                {
-                    "id": 0,
-                    "idProduit": 0,
-                    "nomProduit": "LTO3 original",
-                    "descriptionProduit": "LTO3 Original est un complément naturel qui peut aider à réduire l’anxiété, le stress, la panique et les symptômes associés au trouble déficitaire de l’attention avec ou sans hyperactivité (TDAH). Il peut aider à favoriser la concentration, à améliorer la qualité du sommeil et à favoriser une relaxation temporaire.",
-                    "prix": 31.99,
-                    "quantite": 3
-                }
-            ]
+            "valeur": 0,
+            "items": []
         },
         "historique": [
             {

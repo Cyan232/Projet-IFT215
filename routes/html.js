@@ -29,4 +29,20 @@ router.get('/panier', function(req, res){
     res.sendFile(path.join(__dirname + '/../client/panier.html'));
 });
 
+router.get('/revision', function(req, res){
+    res.sendFile(path.join(__dirname + '/../client/revision.html'));
+});
+
+router.get('/accueil', function(req, res){
+    res.sendFile(path.join(__dirname + '/../client/accueil.html'));
+});
+
+router.get('/pgConfirmation', function(req, res){
+    res.sendFile(path.join(__dirname + '/../client/pgConfirmation.html'));
+});
+
+router.get('/connexion', function(req, res){
+    res.sendFile(path.join(__dirname + '/../client/connexion.html'));
+});
+
 module.exports = router
